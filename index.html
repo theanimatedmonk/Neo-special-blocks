@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Quicksand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <title>Special blocks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@rive-app/canvas@latest/rive.js"></script>
+</head>
+<body>
+ <div class="content-container">
+
+
+<!--Discount horizontal ticker-->
+
+<!--Discount horizontal ticker-->
+
+
+<div class="intro-block">
+<!-- Curved line animation -->
+<svg id="curve-text-animation" viewBox="0 0 1495 215" xmlns="http://www.w3.org/2000/svg">
+    <path id="curve" d="M0 214C72.9598 95.0006 301.515 1 616.105 36.4999C917.402 70.4999 1220.73 214 1495 1" fill="none" stroke="black" stroke-width="0"/>
+    <!-- Text element to animate -->
+    <text>
+      <textPath id="curve-text" href="#curve" startOffset="0%" textAnchor="start">
+        Featured Product Featured Product Featured Product
+      </textPath>
+      <textPath id="duplicateTextPath" href="#curve" >
+        Featured Product Featured Product Featured Product
+      </textPath>
+    </text>
+  </svg>
+<!--curved line animation-->
+
+<!--rive canvas-->
+  <canvas id="animation-pattern" width="960"  height="840"></canvas>
+<!--rive canvas-->
+
+    <div class="content">
+        <span><p>Don't miss out on exclusive offers and updates from eBook Boutique. Subscribe to our newsletter and be the first to hear about seasonal promotions, exciting new releases, and more!</p></span>
+        <button class="primary-button">Subscribe now</button>
+    </div>
+
+</div>
+
+<div class="input-card">
+<!--Curved path ticker user input-->
+
+<label for="ticker-text" style="margin-bottom: 12px;"><p>Enter the text you want in the animation</p></label>
+<input type="text"  id="ticker-text" placeholder="Enter your content" style="margin-bottom: 40px;" required/>
+
+<!--Rive color change input-->
+<label for="color-picker" style="margin-bottom: 12px;"><p>Pick a color for the Halloween glow</p></label>
+<input type="color" id="color-picker" class="color-picker" value="#FFD500"  required />
+
+
+</div>
+
+
+</div>  
+      
+<script src="script.js"></script>
+     
+</body>
